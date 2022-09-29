@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Filter</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="filter-section">
+        <ul class="main-ul">
+          <li class="main-li">
+            <div class="main-li-name" style="border: 0">
+              Brand <i class="fa fa-regular fa-angle-down"></i>
+            </div>
+            <ul class="sub-ul">
+              <li class="sub-li">
+                <input type="checkbox" name="hp" id="brand" /> HP
+              </li>
+              <li class="sub-li">
+                <input type="checkbox" name="asus" id="brand" /> ASUS
+              </li>
+              <li class="sub-li">
+                <input type="checkbox" name="lenovo" id="brand" /> Lenovo
+              </li>
+              <li class="sub-li">
+                <input type="checkbox" name="apple" id="brand" /> Apple
+              </li>
+            </ul>
+          </li>
+          <li class="main-li">
+            <div class="main-li-name">
+              OS <i class="fa fa-regular fa-angle-down"></i>
+            </div>
+            <ul class="sub-ul">
+              <li class="sub-li">
+                <input type="checkbox" name="windows" id="os" /> Windows
+              </li>
+              <li class="sub-li">
+                <input type="checkbox" name="dos" id="os" /> DOS
+              </li>
+              <li class="sub-li">
+                <input type="checkbox" name="ubuntu" id="os" /> Ubuntu
+              </li>
+              <li class="sub-li">
+                <input type="checkbox" name="mac" id="os" /> Mac OS
+              </li>
+            </ul>
+          </li>
+          <li class="main-li">
+            <div class="main-li-name">
+              Processor <i class="fa fa-regular fa-angle-down"></i>
+            </div>
+            <ul class="sub-ul">
+              <li class="sub-li">
+                <input type="checkbox" name="amd" id="processor" /> AMD
+              </li>
+              <li class="sub-li">
+                <input type="checkbox" name="intel" id="processor" /> Intel
+              </li>
+              <li class="sub-li">
+                <input type="checkbox" name="m1" id="processor" /> Apple M1
+              </li>
+            </ul>
+          </li>
+          <li class="main-li">
+            <div class="main-li-name">
+              Rating <i class="fa fa-regular fa-angle-down"></i>
+            </div>
+            <ul class="sub-ul">
+              <li class="sub-li">
+                <input type="radio" name="a" value="4" id="rating" /> 4 & above
+              </li>
+              <li class="sub-li">
+                <input type="radio" name="a" value="3" id="rating" /> 3 & above
+              </li>
+              <li class="sub-li">
+                <input type="radio" name="a" value="2" id="rating" /> 2 & above
+              </li>
+            </ul>
+          </li>
+          <li class="main-li">
+            <div class="main-li-name">Price</div>
+            <ul class="sub-ul show">
+              <li class="sub-li amount-container">
+                <input type="number" class="amount" value="0" min="0" /> to
+                <input type="number" class="amount" value="100000" min="0" />
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="items">
+        <div class="sort-section">
+          <b>Sort By</b>
+          <span class="popularity">Popularity</span>
+          <span class="l2h">Price - Low to High</span>
+          <span class="h2l">Price - High to Low</span>
+        </div>
+        <!-- render -->
+        <div class="render"></div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
